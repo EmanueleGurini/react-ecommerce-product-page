@@ -1,0 +1,11 @@
+.showbox {
+  border-radius: 8px;
+  height: 450px;
+  overflow: hidden;
+  width: 450px;
+}
+
+.showbox > img {
+  object-fit: hidden;
+  width: 100%;
+}

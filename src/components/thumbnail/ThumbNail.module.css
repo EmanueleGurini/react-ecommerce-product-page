@@ -1,0 +1,27 @@
+.thumbNail {
+  border-radius: 8px;
+  height: 94px;
+  overflow: hidden;
+  width: 94px;
+  position: relative;
+}
+
+.thumbNail > img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.selected {
+  border: 3px solid var(--orange);
+}
+
+.over {
+  background-color: white;
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,16 @@
+.counter {
+  align-items: center;
+  background-color: var(--light-grayish-blue);
+  display: flex;
+  width: 100%;
+}
+
+.counter button {
+  all: unset;
+  padding: 8px 16px;
+}
+
+.counter > div {
+  flex-grow: 1;
+  text-align: center;
+}
