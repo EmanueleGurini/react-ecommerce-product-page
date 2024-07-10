@@ -1,0 +1,11 @@
+.button {
+  background-color: var(--orange);
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  font-weight: 700;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 32px;
+}
