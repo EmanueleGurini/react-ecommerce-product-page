@@ -1,8 +1,10 @@
 .counter {
   align-items: center;
   background-color: var(--light-grayish-blue);
+  border-radius: 8px;
   display: flex;
   width: 100%;
+  justify-content: space-between;
 }
 
 .counter button {
@@ -11,6 +13,5 @@
 }
 
 .counter > div {
-  flex-grow: 1;
   text-align: center;
 }

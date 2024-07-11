@@ -4,8 +4,10 @@
   border-radius: 4px;
   display: flex;
   font-weight: 700;
-  gap: 8px;
+  gap: 16px;
   justify-content: center;
   align-items: center;
-  padding: 8px 32px;
+  padding: 16px 64px;
+  white-space: nowrap;
+  font-size: 18px;
 }
