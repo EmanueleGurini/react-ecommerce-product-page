@@ -6,15 +6,18 @@ import ProductLightBox from "./components/product-lightbox/ProductLightBox";
 
 import { products } from "./data/products";
 import ProductDescription from "./components/product-description/ProductDescription";
+import Layout from "./components/layout/Layout";
 
 function App() {
   return (
-    <section className={classNames(styles.container)}>
-      <div className={classNames(styles["product-content"])}>
-        <ProductLightBox products={products} />
-        <ProductDescription />
-      </div>
-    </section>
+    <Layout>
+      <section className={classNames(styles.container)}>
+        <div className={classNames(styles["product-content"])}>
+          <ProductLightBox products={products} />
+          <ProductDescription />
+        </div>
+      </section>
+    </Layout>
   );
 }
 
