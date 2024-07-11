@@ -21,11 +21,10 @@ function ProductLightBox({ products }) {
       <ul className={classNames(styles["thumbnail-list"])}>
         {products.map((product) => {
           return (
-            <li key={product.id}>
+            <li key={product.id} onClick={() => handleClick(product.id)}>
               <ThumbNail
                 thumbNail={product.thumbNail}
                 isSelected={product.id == selectedProduct.id}
-                handleSelect={() => handleClick(product.id)}
               />
             </li>
           );
