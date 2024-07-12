@@ -3,14 +3,14 @@ import styles from "./Counter.module.css";
 import IconAdd from "../icons/IconAdd";
 import IconMinus from "../icons/IconMinus";
 
-function Counter() {
+function Counter({ onAdd, count, onMin }) {
   return (
     <div className={classNames(styles.counter)}>
-      <button>
+      <button onClick={onMin}>
         <IconMinus />
       </button>
-      <div>0</div>
-      <button>
+      <div>{count}</div>
+      <button onClick={onAdd}>
         <IconAdd />
       </button>
     </div>

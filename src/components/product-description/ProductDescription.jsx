@@ -2,11 +2,11 @@ import classNames from "classnames";
 
 import styles from "./ProductDescription.module.css";
 
-import Counter from "../counter/Counter";
-import Button from "../button/Button";
-import IconCart from "../icons/IconCart";
+//import Counter from "../counter/Counter";
+//import Button from "../button/Button";
+//import IconCart from "../icons/IconCart";
 
-function ProductDescription() {
+function ProductDescription({ children }) {
   return (
     <div className={classNames(styles["product-description"])}>
       <div className={classNames(styles["product-description__header"])}>
@@ -30,10 +30,7 @@ function ProductDescription() {
         </p>
       </div>
       <div className={classNames(styles["product-description__cart"])}>
-        <Counter />
-        <Button>
-          <IconCart />
-        </Button>
+        {children}
       </div>
     </div>
   );
